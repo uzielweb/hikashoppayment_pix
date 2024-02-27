@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="plugin" version="2.5" method="upgrade" group="hikashoppayment">
+	<name>hikashoppayment_pix</name>
+	<creationDate>2024-02-22</creationDate>
+	<version>1.0.2</version>
+	<author>Hikashop</author>
+	<authorEmail>contato@pontomega.com.br</authorEmail>
+	<authorUrl>https://www.pontomega.com.br</authorUrl>
+	<copyright>(C) 2024 Ponto Mega</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<description>PIX_PAYMENT_PLUGIN_DESCRIPTION</description>
+	<files>
+		<filename plugin="pix">pix.php</filename>
+		<filename>pix_end.php</filename>
+		<filename plugin="pix">index.html</filename>
+		<filename>pix.svg</filename>
+	
+	</files>
+	<languages>
+		<language tag="en-GB">language/en-GB/plg_hikashoppayment_pix.ini</language>
+		<language tag="en-GB">language/en-GB/plg_hikashoppayment_pix.sys.ini</language>
+		<language tag="pt-BR">language/pt-BR/plg_hikashoppayment_pix.ini</language>
+		<language tag="pt-BR">language/pt-BR/plg_hikashoppayment_pix.sys.ini</language>
+	</languages>
+
+	<params addpath="/components/com_hikashop/params">
+		<param name="pluginoptions" type="pluginoptions" default="plugin" label="hikashop" description="HikaShop options" />
+	</params>
+	<config>
+		<fields name="params" addfieldpath="/components/com_hikashop/fields">
+			<fieldset name="basic">	
+				
+				
+				<field id="pluginoptions" name="pluginoptions" type="pluginoptions" label="hikashop" description="HikaShop options" />
+			</fieldset>
+		</fields>
+	</config>
+</extension>
